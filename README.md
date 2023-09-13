@@ -1,3 +1,7 @@
+···
+node v18 以上
+···
+
 ```
 const browser = await puppeteer.launch({
         headless: false,   //是否无头模式 false显示浏览器窗口方便调试 true隐藏浏览器窗口

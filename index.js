@@ -21,7 +21,7 @@ const main = async () => {
         fs.writeFileSync("image.png", dataBuffer)
         console.log("二维码保存成功 扫码登录", "image.png")
     }
-    await page.waitForSelector("#globalNav > div.header_rightWrapper__2CIJ_ > div:nth-child(3) > div > div > a > span")
+    await page.waitForSelector("#globalNav > div.header_rightWrapper__2CIJ_ > div:nth-child(3) > div > div > a > span", { timeout: 999999 })
     await page.click("#globalNav > div.header_rightWrapper__2CIJ_ > div:nth-child(3) > div > div > a > span")
     await page.click("#globalNav > div.header_rightWrapper__2CIJ_ > div:nth-child(3) > div > div > div > div > section > ul > li:nth-child(5) > a")
 }

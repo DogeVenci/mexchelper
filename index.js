@@ -21,7 +21,7 @@ const main = async () => {
     });
     if (data) {
         const imgData = data.replace(/^data:image\/\w+;base64,/, "");
-        let dataBuffer = Buffer.from(imgData, 'base64');
+        const dataBuffer = Buffer.from(imgData, 'base64');
         fs.writeFileSync("image.png", dataBuffer)
         console.log("二维码保存成功 扫码登录", "image.png")
     }

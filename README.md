@@ -1,6 +1,6 @@
-···
+```
 node v18 以上
-···
+```
 
 ```
 const browser = await puppeteer.launch({
@@ -12,10 +12,10 @@ const browser = await puppeteer.launch({
     });
 ```
 
-···
+```
 cd mexchelper
 npm install //or pnpm i 安装依赖
 node index.js
 //运行后获取的二维码保存再同目录 image.png
 //网页超时设置 60s
-···
+```
